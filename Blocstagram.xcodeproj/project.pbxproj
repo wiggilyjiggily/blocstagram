@@ -10,9 +10,7 @@
 		A192FC9B1A4B34F800B36C15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A192FC9A1A4B34F800B36C15 /* main.m */; };
 		A192FC9E1A4B34F800B36C15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A192FC9D1A4B34F800B36C15 /* AppDelegate.m */; };
 		A192FCA11A4B34F800B36C15 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A192FCA01A4B34F800B36C15 /* ViewController.m */; };
-		A192FCA41A4B34F800B36C15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A192FCA21A4B34F800B36C15 /* Main.storyboard */; };
 		A192FCA61A4B34F800B36C15 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A192FCA51A4B34F800B36C15 /* Images.xcassets */; };
-		A192FCA91A4B34F800B36C15 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A192FCA71A4B34F800B36C15 /* LaunchScreen.xib */; };
 		A192FCB51A4B34F800B36C15 /* BlocstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A192FCB41A4B34F800B36C15 /* BlocstagramTests.m */; };
 /* End PBXBuildFile section */
 
@@ -34,9 +32,7 @@
 		A192FC9D1A4B34F800B36C15 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		A192FC9F1A4B34F800B36C15 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		A192FCA01A4B34F800B36C15 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		A192FCA31A4B34F800B36C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A192FCA51A4B34F800B36C15 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A192FCA81A4B34F800B36C15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		A192FCAE1A4B34F800B36C15 /* BlocstagramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BlocstagramTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A192FCB31A4B34F800B36C15 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A192FCB41A4B34F800B36C15 /* BlocstagramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BlocstagramTests.m; sourceTree = "<group>"; };
@@ -85,9 +81,7 @@
 				A192FC9D1A4B34F800B36C15 /* AppDelegate.m */,
 				A192FC9F1A4B34F800B36C15 /* ViewController.h */,
 				A192FCA01A4B34F800B36C15 /* ViewController.m */,
-				A192FCA21A4B34F800B36C15 /* Main.storyboard */,
 				A192FCA51A4B34F800B36C15 /* Images.xcassets */,
-				A192FCA71A4B34F800B36C15 /* LaunchScreen.xib */,
 				A192FC981A4B34F800B36C15 /* Supporting Files */,
 			);
 			path = Blocstagram;
@@ -199,8 +193,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A192FCA41A4B34F800B36C15 /* Main.storyboard in Resources */,
-				A192FCA91A4B34F800B36C15 /* LaunchScreen.xib in Resources */,
 				A192FCA61A4B34F800B36C15 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -242,25 +234,6 @@
 			targetProxy = A192FCAF1A4B34F800B36C15 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		A192FCA21A4B34F800B36C15 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A192FCA31A4B34F800B36C15 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		A192FCA71A4B34F800B36C15 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A192FCA81A4B34F800B36C15 /* Base */,
-			);
-			name = LaunchScreen.xib;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		A192FCB61A4B34F800B36C15 /* Debug */ = {
