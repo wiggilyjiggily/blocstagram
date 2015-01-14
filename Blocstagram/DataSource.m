@@ -127,6 +127,7 @@
     }];
 }
 
+/*
 - (void)populateDataWithParamaters:(NSDictionary *)parameters completionHandler:(NewItemCompletionBlock)completionHandler {
     if (self.accessToken) {
         NSMutableArray *mutableParameters = [@{@"access_token": self.accessToken} mutableCopy];
@@ -137,7 +138,7 @@
          p]
     }
 }
-
+*/
 - (void)parseDataFromFeedDictionary:(NSDictionary *)feedDictionary fromRequestWithParameters:(NSDictionary *)parameters {
     NSArray *mediaArray = feedDictionary[@"data"];
     
