@@ -27,8 +27,15 @@ NSString *const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewCo
     UIWebView *webView = [[UIWebView alloc] init];
     webView.delegate = self;
     
+    UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style:UIBarButtonItemStylePlain target:self action:@selector(backPressed:)];
+    self.navigationItem.leftBarButtonItem = backButton;
+    
     self.webView = webView;
     self.view = webView;
+}
+
+- (IBAction)backPressed:(id)sender {
+    [self.webView goBack];
 }
 
 - (void)viewDidLoad {
@@ -37,6 +44,8 @@ NSString *const LoginViewControllerDidGetAccessTokenNotification = @"LoginViewCo
     
     NSString *urlString = [NSString stringWithFormat:@"https://instagram.com/oauth/authorize/?client_id=%@&redirect_uri=%@&response_type=token", [DataSource instagramClientID], [self redirectURI]];
     NSURL *url = [NSURL URLWithString:urlString];
+    
+    self.title = @"Login";
     
     if (url) {
         NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url];
