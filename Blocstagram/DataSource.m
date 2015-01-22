@@ -23,7 +23,7 @@
 @property (nonatomic, assign) BOOL isLoadingOlderItems;
 @property (nonatomic, assign) BOOL thereAreNoMoreOlderMessages;
 
-@property (nonatomic, strong) AFHTTPRequestOperationManager *instagramOperationManager;
+//@property (nonatomic, strong) AFHTTPRequestOperationManager *instagramOperationManager;
 
 @end
 
@@ -70,13 +70,13 @@
         NSString *minID = [[self.mediaItems firstObject] idNumber];
         NSDictionary *parameters = @{@"min_id": minID};
         
-        [self populateDataWithParamaters:parameters completionHandler:^(NSError *error) {
-            self.isRefreshing = NO;
-            
-            if (completionHandler) {
-                completionHandler(error);
-            }
-        }];
+//    [self populateDataWithParamaters:parameters completionHandler:^(NSError *error) {
+//            self.isRefreshing = NO;
+//            
+//            if (completionHandler) {
+//                completionHandler(error);
+//            }
+//        }];
     }
 }
 
@@ -87,13 +87,13 @@
         NSString *maxID = [[self.mediaItems lastObject] idNumber];
         NSDictionary *parameters = @{@"max_id": maxID};
         
-        [self populateDataWithParamaters:parameters completionHandler:^(NSError *error) {
-            self.isLoadingOlderItems = NO;
-            
-            if (completionHandler) {
-                completionHandler(error);
-            }
-        }];
+//        [self populateDataWithParamaters:parameters completionHandler:^(NSError *error) {
+//            self.isLoadingOlderItems = NO;
+//            
+//            if (completionHandler) {
+//                completionHandler(error);
+//            }
+//        }];
     }
 }
 
@@ -123,7 +123,7 @@
     [[NSNotificationCenter defaultCenter] addObserverForName:LoginViewControllerDidGetAccessTokenNotification object:nil queue:nil usingBlock:^(NSNotification *note) {
         self.accessToken = note.object;
         
-        [self populateDataWithParamaters:nil completionHandler:nil];
+//        [self populateDataWithParamaters:nil completionHandler:nil];
     }];
 }
 
@@ -178,7 +178,7 @@
     if (mediaItem.mediaURL && !mediaItem.image) {
         mediaItem.downloadState = MediaDownloadStateDownloadInProgress;
         
-        [self.instagramOperationManager GET:mediaItem.mediaURL]
+//        [self.instagramOperationManager GET:mediaItem.mediaURL]
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), ^{
             NSURLRequest *request = [NSURLRequest requestWithURL:mediaItem.mediaURL];
             

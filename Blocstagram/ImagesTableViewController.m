@@ -89,6 +89,7 @@
     if (bottomIndexPath && bottomIndexPath.row == [self items].count - 1) {
         [[DataSource sharedInstance] requestOldItemsWithCompletionHandler:nil];
     }
+    NSLog(@"I am here.");
 }
 
 - (NSArray *)items {
@@ -97,7 +98,7 @@
 
 #pragma mark - UIScrollViewDelegate
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     [self infiniteScrollIfNecessary];
 }
 
